@@ -1,6 +1,5 @@
 package ru.netology.doman;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -15,7 +14,6 @@ public class Radio {
     int minStation = 0;
     int maxVolumte = 100;
     int minVolume = 0;
-
 
     public void setCurrentStation(int currentStation) {
         if (currentStation > maxStation) {
@@ -45,7 +43,6 @@ public class Radio {
         currentStation--;
     }
 
-
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume > maxVolumte) {
             this.currentVolume = maxVolumte;
@@ -69,5 +66,4 @@ public class Radio {
             currentVolume--;
         }
     }
-
 }
