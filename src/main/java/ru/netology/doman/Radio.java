@@ -3,10 +3,18 @@ package ru.netology.doman;
 public class Radio {
     int currentStation;
     int currentVolume;
-    int maxStation = 9;
+    int maxStation = 10;
     int minStation = 0;
-    int maxVolumte = 10;
+    int maxVolumte = 100;
     int minVolume = 0;
+
+    public Radio() {
+    }
+
+    public Radio(int maxStation) {
+        this.maxStation = maxStation;
+    }
+
 
     public int getCurrentStation() {
         return currentStation;
