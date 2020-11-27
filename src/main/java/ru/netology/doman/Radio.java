@@ -2,10 +2,11 @@ package ru.netology.doman;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 @Data
-@AllArgsConstructor
+@NoArgsConstructor
 
 public class Radio {
     int currentStation;
@@ -14,10 +15,6 @@ public class Radio {
     int minStation = 0;
     int maxVolumte = 100;
     int minVolume = 0;
-
-    public Radio() {
-
-    }
 
 
     public void setCurrentStation(int currentStation) {
