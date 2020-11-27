@@ -1,16 +1,19 @@
 package ru.netology.doman;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@NoArgsConstructor
+
 public class Radio {
     int currentStation;
     int currentVolume;
-    int maxStation = 9;
+    int maxStation = 10;
     int minStation = 0;
-    int maxVolumte = 10;
+    int maxVolumte = 100;
     int minVolume = 0;
-
-    public int getCurrentStation() {
-        return currentStation;
-    }
 
     public void setCurrentStation(int currentStation) {
         if (currentStation > maxStation) {
@@ -40,10 +43,6 @@ public class Radio {
         currentStation--;
     }
 
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
-
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume > maxVolumte) {
             this.currentVolume = maxVolumte;
@@ -66,37 +65,5 @@ public class Radio {
         if (currentVolume > minVolume) {
             currentVolume--;
         }
-    }
-
-    public int getMaxStation() {
-        return maxStation;
-    }
-
-    public void setMaxStation(int maxStation) {
-        this.maxStation = maxStation;
-    }
-
-    public int getMinStation() {
-        return minStation;
-    }
-
-    public void setMinStation(int minStation) {
-        this.minStation = minStation;
-    }
-
-    public int getMaxVolumte() {
-        return maxVolumte;
-    }
-
-    public void setMaxVolumte(int maxVolumte) {
-        this.maxVolumte = maxVolumte;
-    }
-
-    public int getMinVoume() {
-        return minVolume;
-    }
-
-    public void setMinVoume(int minVoume) {
-        this.minVolume = minVoume;
     }
 }
